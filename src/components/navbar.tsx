@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-between border-b border-black container py-5">
+    <div className="flex items-center justify-between container py-5">
       <div>
         <Image src={Logo} alt="Logo" />
       </div>
@@ -21,8 +21,8 @@ const Navbar = () => {
       </div>
       <div>
         <button className="flex items-center gap-2 px-7 py-4 rounded-xl text-white bg-black">
-        <Image src={Signout} alt="Signout"/>
-        Launch App
+          <Image src={Signout} alt="Signout" />
+          Launch App
         </button>
       </div>
     </div>

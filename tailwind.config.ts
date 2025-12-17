@@ -33,7 +33,8 @@ const config: Config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-       ChakraPetch: ["ChakraPetch", "sans-serif"],
+        ChakraPetch: ["ChakraPetch", "sans-serif"],
+        ChakraSemibold:["chakrasemibold"]
       },
       container:{
         padding:"20px",

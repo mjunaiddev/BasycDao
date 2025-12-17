@@ -4,7 +4,12 @@
 
 @font-face {
   font-family: "ChakraPetch";
-  src: url("/public/fonts/ChakraPetch-Regular.otf");
+  src: url("/fonts/ChakraPetch-Regular.otf");
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: chakrasemibold;
+  src: url("/fonts/ChakraPetch-SemiBold.ttf");
 }
