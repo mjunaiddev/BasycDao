@@ -6,6 +6,7 @@ const Aboutus = () => {
   return (
     <div className="bg-black">
       <div id="about" className="container pb-20 md:pb-32 px-4">
+        
         {/* Heading */}
         <div className="font-ChakraSemibold text-center text-white text-4xl md:text-[64px] font-semibold pt-16 md:pt-[90px] pb-10">
           About Us
@@ -13,6 +14,7 @@ const Aboutus = () => {
 
         {/* Content Card */}
         <div className="flex flex-col lg:flex-row gap-10 mx-auto items-center justify-center text-white rounded-[20px] bg-[#181817] border-2 border-[#FFFFFF0F] p-6 md:p-10 max-w-[1350px]">
+          
           {/* Text Section */}
           <div className="w-full lg:max-w-[475px]">
             <div className="font-ChakraPetch font-medium text-2xl md:text-[40px] mb-4">

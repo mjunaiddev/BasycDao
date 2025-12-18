@@ -15,7 +15,7 @@ const Features = () => {
       <div id="features" className="container">
         <div className="flex flex-col pt-32 pb-14">
           <div className="mx-auto md:w-[850px]">
-            <div className="font-ChakraSemibold text-center text-white text-[64px] font-semibold">
+            <div className="font-ChakraSemibold text-center text-white text-4xl md:text-[64px] font-semibold pt-16 md:pt-[90px] pb-10">
               Features
             </div>
             <div className="font-medium text-base md:text-xl text-center text-[#FFFFFF66]">

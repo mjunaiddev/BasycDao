@@ -12,7 +12,7 @@ const Navbar = () => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth", block: "start" });
-      setIsOpen(false); // close menu after click (mobile)
+      setIsOpen(false);
     }
   };
 
@@ -52,7 +52,7 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Mobile Toggle Button */}
+        {/* Mobile Toggle */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden text-3xl"
@@ -64,7 +64,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-black text-white">
+        <div className="md:hidden bg-white text-black">
           <ul className="flex flex-col gap-6 px-6 py-8">
             {[
               ["Home", "home"],
@@ -77,11 +77,20 @@ const Navbar = () => {
               <li
                 key={id}
                 onClick={() => scrollToSection(id)}
-                className="cursor-pointer text-xl border-b border-white/10 pb-3"
+                className="cursor-pointer text-xl border-b border-black/10 pb-3"
               >
                 {label}
               </li>
             ))}
+
+            {/* Mobile Launch App Button */}
+            <button
+              onClick={() => setIsOpen(false)}
+              className="mt-6 flex items-center justify-center gap-2 w-full py-4 rounded-xl text-white bg-black"
+            >
+              <Image src={Signout} alt="Signout" />
+              Launch App
+            </button>
           </ul>
         </div>
       )}

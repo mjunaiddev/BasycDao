@@ -56,7 +56,7 @@ const Roadmap = () => {
       </div>
 
       {/* Phase Tabs (scrollable on mobile) */}
-      <div className="flex overflow-x-auto justify-start md:justify-center gap-6 md:gap-[60px] font-ChakraPetch font-medium text-lg md:text-3xl mb-6 px-4">
+      <div className="flex overflow-x-auto justify-center gap-6 md:gap-[60px] font-ChakraPetch font-medium text-lg md:text-3xl mb-6 px-4">
         {phases.map((_, index) => (
           <span
             key={index}

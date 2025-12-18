@@ -13,19 +13,19 @@ const Tokenomics = () => {
         <Image
           src={Tokenomicsimg}
           alt="Tokenomics Image"
-          className="max-w-full h-auto"
+          className="max-w-40 md:max-w-full h-auto"
         />
       </div>
 
       {/* Content Section */}
-      <div className="bg-TokenomicsBg2 w-full max-w-[875px] rounded-lg">
+      <div className="bg-[#083ED20D] md:bg-TokenomicsBg2 w-full max-w-[875px] md:h-[633px] rounded-lg">
         {/* Heading */}
-        <div className="font-ChakraSemibold text-center text-black text-4xl md:text-[64px] font-semibold mt-9 mb-9">
+        <div className="font-ChakraSemibold text-center text-black text-4xl md:text-[64px] font-semibold pt-14 pb-14">
           Tokenomics
         </div>
 
         {/* Stats */}
-        <div className="flex flex-col gap-8 px-6 md:px-16 pb-10">
+        <div className="flex flex-col gap-9 px-6 pb-10 md-pb-0 md:px-16 md:w-[590px] md:ml-[232px] mx-auto">
           {/* Item */}
           {[
             { label: "Liquidity", value: "80%", width: "80%" },
@@ -33,7 +33,7 @@ const Tokenomics = () => {
             { label: "Buy & Sell Tax", value: "6%", width: "6%" },
             { label: "Team", value: "4%", width: "4%" },
           ].map((item, index) => (
-            <div key={index} className="flex flex-col gap-3">
+            <div key={index} className="flex flex-col gap-4 justify-center">
               <div className="flex items-center justify-between">
                 <span className="text-lg md:text-3xl">{item.label}</span>
                 <span className="font-ChakraSemibold font-semibold text-lg md:text-3xl">
