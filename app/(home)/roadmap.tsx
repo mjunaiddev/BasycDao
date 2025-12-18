@@ -51,17 +51,17 @@ const Roadmap = () => {
       <Image className="w-full" src={Frame33} alt="frame33" />
 
       {/* Heading */}
-      <div className="font-ChakraSemibold text-center text-black text-[64px] font-semibold pt-14 pb-14">
+      <div className="font-ChakraSemibold text-center text-black text-4xl md:text-[64px] font-semibold pt-12 md:pt-14 pb-10 md:pb-14">
         Roadmap
       </div>
 
-      {/* Phase Tabs */}
-      <div className="flex justify-center gap-[60px] font-ChakraPetch font-medium text-3xl mb-7 relative">
+      {/* Phase Tabs (scrollable on mobile) */}
+      <div className="flex overflow-x-auto justify-start md:justify-center gap-6 md:gap-[60px] font-ChakraPetch font-medium text-lg md:text-3xl mb-6 px-4">
         {phases.map((_, index) => (
           <span
             key={index}
             onClick={() => setActivePhase(index)}
-            className={`cursor-pointer transition-colors ${
+            className={`cursor-pointer whitespace-nowrap transition-colors ${
               activePhase === index ? "text-[#083ED2]" : "text-black"
             }`}
           >
@@ -71,25 +71,26 @@ const Roadmap = () => {
       </div>
 
       {/* Progress Bar */}
-      <div className="flex justify-center">
-        <div className="relative w-[1020px] h-2 rounded-[10px] bg-[#0000000F]">
+      <div className="flex justify-center px-4">
+        <div className="relative w-full max-w-[1020px] h-2 rounded-[10px] bg-[#0000000F]">
           <div
-            className="absolute top-0 h-2 w-[175px] rounded-[10px] bg-[#083ED2] transition-all duration-500"
+            className="absolute top-0 h-2 rounded-[10px] bg-[#083ED2] transition-all duration-500"
             style={{
-              left: `${activePhase * 255}px`,
+              width: `${100 / phases.length}%`,
+              left: `${(100 / phases.length) * activePhase}%`,
             }}
           />
         </div>
       </div>
 
       {/* Phase Content */}
-      <div className="text-center pb-56">
-        <div className="font-ChakraPetch font-semibold text-5xl mt-11 mb-4">
+      <div className="text-center pb-24 md:pb-56 px-4">
+        <div className="font-ChakraPetch font-semibold text-2xl md:text-5xl mt-10 mb-4">
           {phases[activePhase].title}
         </div>
 
-        <div className="text-[#11111166]">
-          <ul className="list-disc list-inside">
+        <div className="text-[#11111166] max-w-2xl mx-auto">
+          <ul className="list-disc list-inside text-sm md:text-base leading-relaxed">
             {phases[activePhase].points.map((point, i) => (
               <li key={i}>{point}</li>
             ))}

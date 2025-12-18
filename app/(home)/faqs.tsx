@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Frame32 from "@assets/frame-32.png";
 
@@ -38,14 +38,14 @@ const Faqs = () => {
     <div id="faqs" className="bg-black">
       <Image className="w-full" src={Frame32} alt="frame32" />
 
-      <div className="container">
+      <div className="container px-4">
         {/* Heading */}
-        <div className="font-ChakraSemibold text-center text-white text-[64px] font-semibold pt-16 pb-14">
+        <div className="font-ChakraSemibold text-center text-white text-4xl md:text-[64px] font-semibold pt-16 pb-10 md:pb-14">
           FAQs
         </div>
 
         {/* FAQ List */}
-        <div className="w-[970px] mx-auto text-white font-medium text-3xl pb-24">
+        <div className="max-w-[970px] mx-auto text-white font-medium text-lg md:text-3xl pb-20 md:pb-24">
           {faqs.map((faq, index) => {
             const isOpen = activeIndex === index;
 
@@ -54,17 +54,17 @@ const Faqs = () => {
                 {/* Question */}
                 <div
                   onClick={() => toggleFaq(index)}
-                  className="border-t-2 border-[#FFFFFF0F] py-7 flex items-center justify-between cursor-pointer"
+                  className="border-t-2 border-[#FFFFFF0F] py-5 md:py-7 flex items-center justify-between gap-4 cursor-pointer"
                 >
-                  <span>{faq.question}</span>
-                  <span className="text-4xl font-light select-none">
+                  <span className="leading-snug">{faq.question}</span>
+                  <span className="text-3xl md:text-4xl font-light select-none shrink-0">
                     {isOpen ? "×" : "+"}
                   </span>
                 </div>
 
                 {/* Answer */}
                 {isOpen && (
-                  <div className="w-[875px] mt-4 mb-7 font-normal text-xl text-[#FFFFFF66] transition-all duration-300">
+                  <div className="mt-3 md:mt-4 mb-6 md:mb-7 font-normal text-base md:text-xl text-[#FFFFFF66] leading-relaxed">
                     {faq.answer}
                   </div>
                 )}

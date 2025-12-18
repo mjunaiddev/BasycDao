@@ -1,21 +1,25 @@
 import React from "react";
 import Image from "next/image";
 import AboutImg from "@assets/about-img.png";
-import { abey } from "@reown/appkit/networks";
 
 const Aboutus = () => {
   return (
-    <div className=" bg-black">
-      <div id="about" className="container pb-32">
-        <div className="font-ChakraSemibold text-center text-white text-[64px] font-semibold pt-[90px] pb-10">
+    <div className="bg-black">
+      <div id="about" className="container pb-20 md:pb-32 px-4">
+        {/* Heading */}
+        <div className="font-ChakraSemibold text-center text-white text-4xl md:text-[64px] font-semibold pt-16 md:pt-[90px] pb-10">
           About Us
         </div>
-        <div className="flex w-[1350px] h-[520px] gap-10 mx-auto items-center justify-center text-white rounded-[20px] bg-[#181817] border-2 border-[#FFFFFF0F]">
-          <div className="w-[475px]">
-            <div className="font-ChakraPetch font-medium text-[40px]">
+
+        {/* Content Card */}
+        <div className="flex flex-col lg:flex-row gap-10 mx-auto items-center justify-center text-white rounded-[20px] bg-[#181817] border-2 border-[#FFFFFF0F] p-6 md:p-10 max-w-[1350px]">
+          {/* Text Section */}
+          <div className="w-full lg:max-w-[475px]">
+            <div className="font-ChakraPetch font-medium text-2xl md:text-[40px] mb-4">
               Join as a governance participant
             </div>
-            <div className="text-[#FFFFFF66]">
+
+            <div className="text-[#FFFFFF66] text-sm md:text-base leading-relaxed mb-6">
               Basyc Dao is a decentralized economic protocol designed to create
               lasting stability through community-owned monetary governance.
               Instead of rewarding speculation, its model prioritizes
@@ -25,17 +29,26 @@ const Aboutus = () => {
               that is rooted in utility, not hype — building a financial system
               that strengthens as its community grows.
             </div>
-            <div className="flex gap-2 w-[600px]">
-              <div className="px-7 py-4 text-white rounded-[100px] bg-[#181817] border-[#FFFFFF0F] border-2">
+
+            {/* Buttons */}
+            <div className="flex flex-col sm:flex-row gap-3 w-full">
+              <button className="px-6 py-3 text-white rounded-[100px] bg-[#181817] border border-[#FFFFFF0F] text-sm md:text-base">
                 Enter Governance Portal
-              </div>
-              <div className="px-7 py-4 text-white rounded-[100px] bg-[#181817] border-[#FFFFFF0F] border-2">
+              </button>
+              <button className="px-6 py-3 text-white rounded-[100px] bg-[#181817] border border-[#FFFFFF0F] text-sm md:text-base">
                 Unlock Exclusive Rewards
-              </div>
+              </button>
             </div>
           </div>
-          <div className="rounded-[30px]">
-            <Image src={AboutImg} alt="AboutImg" width={660} height={375} />
+
+          {/* Image Section */}
+          <div className="w-full max-w-[660px] rounded-[30px] overflow-hidden">
+            <Image
+              src={AboutImg}
+              alt="About Image"
+              className="w-full h-auto"
+              priority
+            />
           </div>
         </div>
       </div>

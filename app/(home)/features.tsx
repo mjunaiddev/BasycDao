@@ -14,18 +14,18 @@ const Features = () => {
     <div className=" bg-black">
       <div id="features" className="container">
         <div className="flex flex-col pt-32 pb-14">
-          <div className="mx-auto w-[850px]">
+          <div className="mx-auto md:w-[850px]">
             <div className="font-ChakraSemibold text-center text-white text-[64px] font-semibold">
               Features
             </div>
-            <div className="font-medium text-xl text-center text-[#FFFFFF66]">
+            <div className="font-medium text-base md:text-xl text-center text-[#FFFFFF66]">
               A stable, transparent and fully governed financial protocol
               engineered for long-term resilience.
             </div>
           </div>
         </div>
         <div className="flex flex-col gap-5">
-          <div className="flex gap-5 justify-center">
+          <div className="flex flex-col md:flex-row gap-5 justify-center">
             <div className="flex gap-2 items-center h-[86px] py-6 px-7 text-white rounded-xl bg-[#181817] border-[#FFFFFF0F] border-2">
               <Image src={Drop} alt="Drop" />
               Algorithmic Stability
@@ -43,7 +43,7 @@ const Features = () => {
               Lottery
             </div>
           </div>
-          <div className="flex gap-5 justify-center">
+          <div className="flex flex-col md:flex-row gap-5 justify-center">
             <div className="flex gap-2 items-center h-[86px] py-6 px-7 text-white rounded-xl bg-[#181817] border-[#FFFFFF0F] border-2">
               <Image src={Cloudaudit} alt="Drop" />
               Community Treasury
@@ -57,7 +57,7 @@ const Features = () => {
               ncentivized Liquidity
             </div>
           </div>
-          <div className="flex gap-5 justify-center">
+          <div className="flex flex-col md:flex-row gap-5 justify-center">
             <div className="flex gap-2 items-center h-[86px] py-6 px-7 text-white rounded-xl bg-[#181817] border-[#FFFFFF0F] border-2">
               <Image src={Tree} alt="Ticket" />
               Ecosystem Expansion
