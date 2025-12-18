@@ -12,7 +12,7 @@ import Cloudaudit from "@assets/cloud-audit.png";
 const Features = () => {
   return (
     <div className=" bg-black">
-      <div className="container">
+      <div id="features" className="container">
         <div className="flex flex-col pt-32 pb-14">
           <div className="mx-auto w-[850px]">
             <div className="font-ChakraSemibold text-center text-white text-[64px] font-semibold">

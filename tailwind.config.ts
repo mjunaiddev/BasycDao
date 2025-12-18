@@ -42,6 +42,9 @@ const config: Config = {
       },
       backgroundImage: {
         HeroBg: "url('/assets/hero-bg.png')",
+        NavBg: "url('/assets/nav-bg.png')",
+        TokenomicsBg: "url('/assets/tokenomics-bg.png')",
+        TokenomicsBg2: "url('/assets/tokenomics-bg2.png')",
       },
 
     },

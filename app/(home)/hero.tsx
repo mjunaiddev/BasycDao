@@ -5,7 +5,10 @@ import Frame32 from "@assets/frame-32.png";
 const Hero = () => {
   return (
     <>
-      <div className="bg-cover flex items-center border-t border-black h-[1000px] bg-HeroBg">
+      <div
+        id="home"
+        className="bg-cover flex items-center h-[1024px] bg-HeroBg"
+      >
         <div className="container">
           <div className="flex flex-col gap-6 w-full max-w-[700px]">
             <div>

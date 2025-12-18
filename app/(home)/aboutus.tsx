@@ -6,7 +6,7 @@ import { abey } from "@reown/appkit/networks";
 const Aboutus = () => {
   return (
     <div className=" bg-black">
-      <div className="containe pb-32">
+      <div id="about" className="container pb-32">
         <div className="font-ChakraSemibold text-center text-white text-[64px] font-semibold pt-[90px] pb-10">
           About Us
         </div>

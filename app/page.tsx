@@ -11,7 +11,7 @@ import Tokenomics from "./(home)/tokenomics";
 const page = () => {
   return (
     <>
-      <div className="absolute left-0 right-0">
+      <div className="fixed left-0 right-0">
         <Navbar />
       </div>
       <Hero />
