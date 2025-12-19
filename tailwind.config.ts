@@ -34,19 +34,21 @@ const config: Config = {
       },
       fontFamily: {
         ChakraPetch: ["ChakraPetch", "sans-serif"],
-        ChakraSemibold:["chakrasemibold"]
+        ChakraSemibold: ["chakrasemibold"],
+        Exo: ["Exo", "sans-serif"],
+        Urbanist: ["Urbanist", "sans-serif"],
       },
-      container:{
-        padding:"20px",
-        center :true,
+      container: {
+        padding: "20px",
+        center: true,
       },
       backgroundImage: {
         HeroBg: "url('/assets/hero-bg.png')",
         NavBg: "url('/assets/nav-bg.png')",
+        DappNavBg: "url('/assets/dapp-bg.png')",
         TokenomicsBg: "url('/assets/tokenomics-bg.png')",
         TokenomicsBg2: "url('/assets/tokenomics-bg2.png')",
       },
-
     },
   },
   plugins: [require("tailwindcss-animate")],

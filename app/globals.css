@@ -13,3 +13,13 @@
   font-family: chakrasemibold;
   src: url("/fonts/ChakraPetch-SemiBold.ttf");
 }
+
+@font-face {
+  font-family: Exo;
+  src: url("/fonts/Exo-Regular.otf");
+}
+
+@font-face {
+  font-family: Urbanist;
+  src: url("/fonts/Urbanist-Regular.otf");
+}
