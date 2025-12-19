@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Signout from "@assets/sign-out.png";
 import Frame32 from "@assets/frame-32.png";
 
 const Hero = () => {
@@ -40,12 +39,7 @@ const Hero = () => {
             {/* CTA Button */}
             <div>
               <button className="flex items-center gap-2 px-6 md:px-7 py-3 md:py-4 rounded-xl text-white bg-[#083ED2] text-sm md:text-base">
-                <Image
-                  src={Signout}
-                  alt="Signout"
-                  className="w-4 h-4 md:w-auto md:h-auto"
-                />
-                Launch App
+                Buy Now
               </button>
             </div>
           </div>

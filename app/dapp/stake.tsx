@@ -41,7 +41,7 @@ const Stake = () => {
             </div>
 
             <div className="flex gap-[850px] justify-between items-center bg-[#222222]  border-1 border-[#575757] rounded-lg backdrop-blur-[20px] px-7 py-2 font-Urbanist">
-              <span className="font-medium text-sm">Enter ETH Amount</span>
+              <span className="font-medium text-sm text-[#FFFFFF4D]">Enter ETH Amount</span>
               <span className="font-bold text-xl text-[#083ED2]">MAX</span>
             </div>
 

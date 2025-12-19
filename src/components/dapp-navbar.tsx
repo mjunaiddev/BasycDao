@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import Logo from "@assets/logo-dapp.png";
+import Link from "next/link";
 
 type ViewType =
   | "dashboard"
@@ -32,7 +33,9 @@ const Dappnavbar = ({ activeView, setActiveView }: Props) => {
     <div className="container flex items-center justify-between h-[100px] relative">
       {/* Logo */}
       <div className="cursor-pointer">
+        <Link href={"/"}>
         <Image src={Logo} alt="Logo" />
+        </Link>
       </div>
 
       {/* Navigation */}

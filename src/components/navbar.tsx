@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Logo from "@assets/logo.png";
 import Signout from "@assets/sign-out.png";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,10 +47,12 @@ const Navbar = () => {
 
         {/* Desktop Button */}
         <div className="hidden md:block">
-          <button className="flex items-center gap-2 px-7 py-4 rounded-xl text-white bg-black">
-            <Image src={Signout} alt="Signout" />
-            Launch App
-          </button>
+          <Link href={"/dapp"}>
+            <button className="flex items-center gap-2 px-7 py-4 rounded-xl text-white bg-black">
+              <Image src={Signout} alt="Signout" />
+              Launch App
+            </button>
+          </Link>
         </div>
 
         {/* Mobile Toggle */}
