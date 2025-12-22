@@ -87,13 +87,12 @@ const Navbar = () => {
             ))}
 
             {/* Mobile Launch App Button */}
-            <button
-              onClick={() => setIsOpen(false)}
-              className="mt-6 flex items-center justify-center gap-2 w-full py-4 rounded-xl text-white bg-black"
-            >
-              <Image src={Signout} alt="Signout" />
-              Launch App
-            </button>
+            <Link href={"/dapp"}>
+              <button className="mt-6 flex items-center justify-center gap-2 w-full py-4 rounded-xl text-white bg-black">
+                <Image src={Signout} alt="Signout" />
+                Launch App
+              </button>
+            </Link>
           </ul>
         </div>
       )}
