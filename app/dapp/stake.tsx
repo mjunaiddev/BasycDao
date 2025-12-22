@@ -19,7 +19,7 @@ const Stake = () => {
     
   return (
     <div className="container">
-      <div className="font-ChakraPetch font-semibold text-[64px] text-[#083ED2] text-center">
+      <div className="font-ChakraPetch font-semibold text-[64px] text-[#083ED2] text-center mb-9">
         Stake Basyc Dao
       </div>
       <div className="flex flex-col gap-6">

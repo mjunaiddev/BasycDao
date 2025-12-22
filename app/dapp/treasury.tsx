@@ -25,7 +25,7 @@ const Treasury = () => {
 
   return (
     <div className="container">
-      <div className="font-ChakraPetch font-semibold text-[64px] text-[#083ED2] text-center">
+      <div className="font-ChakraPetch font-semibold text-[64px] text-[#083ED2] text-center mb-9">
         Treasury activity
       </div>
       <div className="h-[478px] border-2 border-[#FFFFFF0F] rounded-[20px] bg-[#18181780] backdrop-blur-2xl text-white">

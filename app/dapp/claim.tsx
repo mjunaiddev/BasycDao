@@ -1,6 +1,11 @@
-import React from "react";
+"use client";
+
+import TestModal from "@/src/components/modals/test-modal";
+import React, { useState } from "react";
 
 const Claim = () => {
+  const [openModal, setOpenModal] = useState(false);
+
   const rows = [
     { lockedid: "$10", lockedamount: "5 DAYS", type: "ERC-20" },
     { lockedid: "$22", lockedamount: "3 DAYS", type: "ERC-20" },
@@ -13,8 +18,8 @@ const Claim = () => {
   const isScrollable = rows.length > 3;
 
   return (
-    <div className="container">
-      <div className="font-ChakraPetch font-semibold text-[64px] text-[#083ED2] text-center">
+    <div className="container relative">
+      <div className="font-ChakraPetch font-semibold text-[64px] text-[#083ED2] text-center  mb-9">
         Claim Basyc Dao Staking Rewards
       </div>
       <div className="flex flex-col gap-7">
@@ -49,7 +54,12 @@ const Claim = () => {
                   <div>{row.lockedid}</div>
                   <div>{row.lockedamount}</div>
                   <div>{row.type}</div>
-                  <button className="border-2 border-[#083ED2] rounded-[10px] font-medium text-xl w-[135px] py-2 mx-auto">
+                  <button
+                    onClick={() => {
+                      setOpenModal(true);
+                    }}
+                    className="border-2 border-[#083ED2] rounded-[10px] font-medium text-xl w-[135px] py-2 mx-auto"
+                  >
                     View
                   </button>
                 </div>
@@ -58,6 +68,11 @@ const Claim = () => {
           </div>
         </div>
       </div>
+      {openModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-md">
+          <TestModal onClose={() => setOpenModal(false)} />
+        </div>
+      )}
     </div>
   );
 };

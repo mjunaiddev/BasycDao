@@ -3,7 +3,7 @@ import React from "react";
 const Withdraw = () => {
   return (
     <div className="container">
-      <div className="font-ChakraPetch font-semibold text-[64px] text-[#083ED2] text-center">
+      <div className="font-ChakraPetch font-semibold text-[64px] text-[#083ED2] text-center mb-9">
         Withdraw
       </div>
 
