@@ -19,7 +19,8 @@ const Stake = () => {
   ];
 
   return (
-    <div className="container">
+    /* ✅ Full-page scroll + bottom breathing space */
+    <div className="container max-h-screen overflow-y-auto lg:max-h-none lg:overflow-visible pb-40 lg:pb-0">
       <div className="font-ChakraPetch font-semibold text-3xl md:text-5xl lg:text-[64px] text-[#083ED2] text-center mb-9">
         Stake Basyc Dao
       </div>
@@ -31,8 +32,7 @@ const Stake = () => {
             className="flex flex-col lg:flex-row gap-4 justify-between lg:justify-center items-center min-h-44 px-4 md:px-6 lg:px-0 pb-4 lg:pb-0 border-2 border-[#FFFFFF0F] rounded-[20px] bg-[#18181780] backdrop-blur-2xl text-white"
           >
             <div className="flex flex-col gap-4 py-4">
-              {/* Header */}
-              <div className="flex  flex-col md:flex-row md:items-center md:justify-between">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                 <span className="font-ChakraPetch font-bold text-xl md:text-2xl">
                   {card.title}
                 </span>
@@ -47,7 +47,6 @@ const Stake = () => {
                 </div>
               </div>
 
-              {/* Input box */}
               <div className="flex lg:gap-[850px] items-center justify-between bg-[#222222] border border-[#575757] rounded-lg backdrop-blur-[20px] px-4 md:px-7 py-2 font-Urbanist">
                 <input
                   type="text"
@@ -58,7 +57,7 @@ const Stake = () => {
                   MAX
                 </span>
               </div>
-              {/* Pool Share */}
+
               {card.poolShare && (
                 <div>
                   <span className="font-Urbanist font-bold text-lg md:text-xl">
