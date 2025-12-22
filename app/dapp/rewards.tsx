@@ -2,7 +2,6 @@ import React from "react";
 
 const Rewards = () => {
   return (
-    /* ✅ Full-page scroll + bottom padding on small screens */
     <div className="container max-h-screen overflow-y-auto lg:max-h-none lg:overflow-visible pb-24 lg:pb-0">
       <div className="font-ChakraPetch font-semibold text-3xl md:text-5xl lg:text-[64px] text-[#083ED2] text-center mb-9">
         Basyc Dao Rewards Distribution

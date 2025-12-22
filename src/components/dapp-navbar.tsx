@@ -196,7 +196,7 @@ const Dappnavbar = ({ activeView, setActiveView }: Props) => {
                     }}
                     className={`${
                       activeView === "dashboard" ? activeClass : defaultClass
-                    }`}
+                    } cursor-pointer`}
                   >
                     Dashboard
                   </div>
@@ -208,7 +208,7 @@ const Dappnavbar = ({ activeView, setActiveView }: Props) => {
                     }}
                     className={`${
                       activeView === "treasury" ? activeClass : defaultClass
-                    }`}
+                    } cursor-pointer`}
                   >
                     Treasury
                   </div>
@@ -239,7 +239,7 @@ const Dappnavbar = ({ activeView, setActiveView }: Props) => {
                     }}
                     className={`${
                       activeView === "stake" ? activeClass : defaultClass
-                    }`}
+                    } cursor-pointer`}
                   >
                     Stake
                   </div>
@@ -251,7 +251,7 @@ const Dappnavbar = ({ activeView, setActiveView }: Props) => {
                     }}
                     className={`${
                       activeView === "claim" ? activeClass : defaultClass
-                    }`}
+                    } cursor-pointer`}
                   >
                     Claim
                   </div>
@@ -263,7 +263,7 @@ const Dappnavbar = ({ activeView, setActiveView }: Props) => {
                     }}
                     className={`${
                       activeView === "withdraw" ? activeClass : defaultClass
-                    }`}
+                    } cursor-pointer`}
                   >
                     Withdraw
                   </div>
@@ -275,7 +275,7 @@ const Dappnavbar = ({ activeView, setActiveView }: Props) => {
                     }}
                     className={`${
                       activeView === "rewards" ? activeClass : defaultClass
-                    }`}
+                    } cursor-pointer`}
                   >
                     Rewards
                   </div>

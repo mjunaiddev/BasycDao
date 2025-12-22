@@ -19,7 +19,6 @@ const Dashboard = () => {
   return (
     <>
       {isLoading && <Loader />}
-      {/* Full viewport height + vertical scroll on small screens */}
       <div className="h-screen w-full overflow-y-auto px-4 container mx-auto">
         {/* Dashboard Title */}
         <div className="font-ChakraPetch font-semibold text-3xl md:text-5xl lg:text-[64px] text-[#083ED2] text-center mb-9">

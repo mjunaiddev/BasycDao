@@ -25,7 +25,6 @@ const Claim = () => {
       </div>
 
       <div className="flex flex-col gap-7">
-        {/* Amount Card */}
         <div className="flex flex-col md:flex-row gap-3 md:gap-0 items-center justify-between h-auto lg:h-[182px] px-4 md:px-9 py-4 md:py-0 border-2 border-[#FFFFFF0F] rounded-[20px] bg-[#18181780] backdrop-blur-2xl text-white">
           <div className="flex flex-col gap-3 justify-center text-center md:text-left">
             <div className="font-semibold text-2xl md:text-3xl text-[#083ED2]">
@@ -40,21 +39,16 @@ const Claim = () => {
             Claim
           </button>
         </div>
-
-        {/* Table Card */}
         <div className="h-[380px] border-2 border-[#FFFFFF0F] rounded-[20px] bg-[#18181780] backdrop-blur-2xl text-white overflow-hidden">
           {/* Horizontal scroll wrapper (mobile only) */}
           <div className="h-full overflow-x-auto md:overflow-x-visible">
             <div className="flex flex-col h-full py-4 min-w-[640px] md:min-w-0">
-              {/* Table Header */}
               <div className="grid grid-cols-4 mx-3 md:mx-8 items-center text-center bg-[#222222] rounded-lg backdrop-blur-[20px] py-3 md:py-4 font-semibold text-sm md:text-base">
                 <div>LOCK ID</div>
                 <div>LOCKED AMOUNT</div>
                 <div>TYPE</div>
                 <div>ACTION</div>
               </div>
-
-              {/* Table Body */}
               <div
                 className={`grid mx-3 md:mx-8 text-center custom-scrollbar ${
                   isScrollable
@@ -83,8 +77,7 @@ const Claim = () => {
           </div>
         </div>
       </div>
-
-      {/* Modal */}
+      
       {openModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-md px-4">
           <TestModal onClose={() => setOpenModal(false)} />

@@ -3,7 +3,6 @@ import React from "react";
 const TestModal = ({ onClose }: { onClose: () => void }) => {
   return (
     <div className="relative w-full max-w-[880px] border-2 border-[#FFFFFF0F] rounded-[20px] bg-[#181817E6] backdrop-blur-2xl text-white px-4 md:px-6 lg:px-8 py-4 md:py-6">
-      {/* Close button */}
       <button
         onClick={onClose}
         className="absolute top-4 md:top-6 right-4 md:right-6 text-[#083ED2] text-xl"
@@ -11,9 +10,7 @@ const TestModal = ({ onClose }: { onClose: () => void }) => {
         ✕
       </button>
 
-      {/* Content */}
       <div className="flex flex-col gap-6 w-full max-w-[765px] mx-auto mb-6 md:mb-8 mt-10 md:mt-14">
-        {/* Top info */}
         <div className="flex flex-col md:flex-row gap-4 md:gap-0 md:justify-between text-center md:text-left">
           <div>
             <span className="font-semibold text-xs md:text-sm uppercase text-[#083ED2]">

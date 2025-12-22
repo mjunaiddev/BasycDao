@@ -34,7 +34,7 @@ const Footer = () => {
           ].map((item, index) => (
             <div
               key={index}
-              className="flex items-center justify-center border border-[#FFFFFF0F] rounded-[10px] w-[52px] h-[52px] md:w-[60px] md:h-[60px]"
+              className="flex items-center justify-center border border-[#FFFFFF0F] rounded-[10px] w-[52px] h-[52px] md:w-[60px] md:h-[60px] cursor-pointer"
             >
               <Image src={item.icon} alt={item.alt} />
             </div>
