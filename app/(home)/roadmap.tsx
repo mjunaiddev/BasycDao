@@ -72,7 +72,7 @@ const Roadmap = () => {
 
       {/* Progress Bar */}
       <div className="flex justify-center px-4">
-        <div className="relative w-full max-w-[1020px] h-2 rounded-[10px] bg-[#0000000F]">
+        <div className="relative w-full max-w-[1020px] h-2 rounded-[10px] bg-[#0000000F] -z-10">
           <div
             className="absolute top-0 h-2 rounded-[10px] bg-[#083ED2] transition-all duration-500"
             style={{

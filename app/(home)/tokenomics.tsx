@@ -18,7 +18,7 @@ const Tokenomics = () => {
       </div>
 
       {/* Content Section */}
-      <div className="bg-[#083ED20D] md:bg-TokenomicsBg2 w-full max-w-[875px] md:h-[633px] rounded-lg">
+      <div className="bg-[#083ED20D] md:bg-white md:bg-TokenomicsBg2 w-full max-w-[875px] md:h-[633px] rounded-lg">
         {/* Heading */}
         <div className="font-ChakraSemibold text-center text-black text-4xl md:text-[64px] font-semibold pt-14 pb-14">
           Tokenomics
@@ -42,7 +42,7 @@ const Tokenomics = () => {
               </div>
 
               {/* Progress Bar */}
-              <div className="relative w-full h-2 rounded-[10px] bg-[#0000000F]">
+              <div className="relative w-full h-2 rounded-[10px] bg-[#0000000F] -z-10">
                 <div
                   className="absolute left-0 top-0 h-2 rounded-[10px] bg-[#083ED2]"
                   style={{ width: item.width }}
