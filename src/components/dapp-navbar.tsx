@@ -31,7 +31,7 @@ const Dappnavbar = ({ activeView, setActiveView }: Props) => {
   const defaultClass = "text-white hover:text-[#083ED2]";
 
   return (
-    <nav className="w-full px-6 md:px-10 relative z-50">
+    <nav className="w-full px-6 md:px-10">
       <div className="container mx-auto flex items-center justify-between h-[100px]">
         {/* Logo */}
         <div className="cursor-pointer">

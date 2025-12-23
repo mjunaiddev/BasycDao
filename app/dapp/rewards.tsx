@@ -2,7 +2,7 @@ import React from "react";
 
 const Rewards = () => {
   return (
-    <div className="container min-h-screen">
+    <div className="container min-h-screen ">
       <div className="font-ChakraPetch font-semibold text-3xl md:text-5xl lg:text-[64px] text-[#083ED2] text-center mb-9">
         Basyc Dao Rewards Distribution
       </div>

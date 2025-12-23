@@ -9,7 +9,6 @@ import Withdraw from "./withdraw";
 import Rewards from "./rewards";
 import Stake from "./stake";
 import Dashboard from "./dashboard";
-import Loader from "@/src/components/loader";
 
 type ViewType =
   | "dashboard"
@@ -41,7 +40,7 @@ const Page = () => {
   };
 
   return (
-    <div className="fixed left-0 right-0 bg-cover bg-center bg-[#111111] bg-DappNavBg min-h-screen">
+    <div className="min-h-screen bg-cover bg-center bg-[#111111] bg-DappNavBg pb-60">
       <Dappnavbar activeView={activeView} setActiveView={setActiveView} />
 
       <div className="container pt-10">{renderView()}</div>
